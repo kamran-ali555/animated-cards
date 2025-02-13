@@ -1,38 +1,33 @@
 import React from 'react';
-import { Sparkles, Code, Palette, Zap } from 'lucide-react';
 
 const cards = [
   {
-    icon: Sparkles,
     title: "Magic Effects",
-    description: "Experience the power of stunning animations and transitions",
+    description: "Developer: Kamran_kakakhail",
     gradient: "from-purple-600 to-pink-600",
     hoverGradient: "from-purple-500 to-pink-500",
     iconBg: "bg-purple-500/10",
     iconColor: "text-purple-400"
   },
   {
-    icon: Code,
     title: "Clean Code",
-    description: "Built with modern technologies and best practices",
+    description: "Developer: Kamran_kakakhail",
     gradient: "from-blue-600 to-cyan-600",
     hoverGradient: "from-blue-500 to-cyan-500",
     iconBg: "bg-blue-500/10",
     iconColor: "text-blue-400"
   },
   {
-    icon: Palette,
     title: "Beautiful Design",
-    description: "Carefully crafted with attention to every detail",
+    description: "Developer: Kamran_kakakhail",
     gradient: "from-emerald-600 to-teal-600",
     hoverGradient: "from-emerald-500 to-teal-500",
     iconBg: "bg-emerald-500/10",
     iconColor: "text-emerald-400"
   },
   {
-    icon: Zap,
     title: "Fast Performance",
-    description: "Optimized for the best possible user experience",
+    description: "Developer: Kamran_kakakhail",
     gradient: "from-orange-600 to-amber-600",
     hoverGradient: "from-orange-500 to-amber-500",
     iconBg: "bg-orange-500/10",
@@ -40,7 +35,7 @@ const cards = [
   }
 ];
 
-function Card({ icon: Icon, title, description, gradient, hoverGradient, iconBg, iconColor }) {
+function Card({ icon:  title, description, gradient, hoverGradient, iconBg, iconColor }) {
   return (
     <div className="group relative">
       {/* Gradient background with animation */}
@@ -49,7 +44,9 @@ function Card({ icon: Icon, title, description, gradient, hoverGradient, iconBg,
       {/* Card content */}
       <div className="relative flex flex-col items-center px-7 py-6 bg-gray-800 ring-1 ring-gray-700 rounded-lg leading-none space-y-6 transition duration-200 hover:transform hover:scale-[1.02]">
         <div className={`flex items-center justify-center w-12 h-12 ${iconBg} rounded-full`}>
-          <Icon className={`w-6 h-6 ${iconColor}`} />
+          {/* <Icon className={`w-6 h-6 ${iconColor}`} /> */}
+          <img className=' rounded-full' src="../src/kamran.jpeg" alt="" />
+
         </div>
         
         <div className="space-y-2 text-center">
